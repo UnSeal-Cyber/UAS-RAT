@@ -1,0 +1,303 @@
+# Dokumentasi 
+    Ini adalah resource API yang saya gunakan :
+    [MAIN RESOURCE](https://covid-api.mmediagroup.fr/v1/cases) 
+
+
+## Covid [/covid]
+### GET
+
+Untuk mengambil data semua negara yang terinfeksi Covid, saya menggunakan method :
+
+`GET` `/covid` untuk mencari history Covid-19
+
++ Response 200 (aplication/json)
+
+    + Body
+
+            {
+                "Afghanistan": {
+                    "All": {
+                        "confirmed": 60300,
+                        "recovered": 53391,
+                        "deaths": 2642,
+                        "country": "Afghanistan",
+                        "population": 35530081,
+                        "sq_km_area": 652090,
+                        "life_expectancy": "45.9",
+                        "elevation_in_meters": null,
+                        "continent": "Asia",
+                        "abbreviation": "AF",
+                        "location": "Southern and Central Asia",
+                        "iso": 4,
+                        "capital_city": "Kabul",
+                        "lat": "33.93911",
+                        "long": "67.709953",
+                        "updated": "2021/05/03 13:20:33+00"
+                    }
+                },
+                "Albania": {
+                    "All": {
+                        "confirmed": 131238,
+                        "recovered": 110920,
+                        "deaths": 2397,
+                        "country": "Albania",
+                        "population": 2930187,
+                        "sq_km_area": 28748,
+                        "life_expectancy": "71.6",
+                        "elevation_in_meters": null,
+                        "continent": "Europe",
+                        "abbreviation": "AL",
+                        "location": "Southern Europe",
+                        "iso": 8,
+                        "capital_city": "Tirana",
+                        "lat": "41.1533",
+                        "long": "20.1683",
+                        "updated": "2021/05/03 13:20:33+00"
+                    }
+                },
+                "Algeria": {
+                    "All": {
+                        "confirmed": 122522,
+                        "recovered": 85398,
+                        "deaths": 3270,
+                        "country": "Algeria",
+                        "population": 41318142,
+                        "sq_km_area": 2381741,
+                        "life_expectancy": "69.7",
+                        "elevation_in_meters": 800,
+                        "continent": "Africa",
+                        "abbreviation": "DZ",
+                        "location": "Northern Africa",
+                        "iso": 12,
+                        "capital_city": "Alger",
+                        "lat": "28.0339",
+                        "long": "1.6596",
+                        "updated": "2021/05/03 13:20:33+00"
+                    }
+                },
+                "Andorra": {
+                    "All": {
+                        "confirmed": 13282,
+                        "recovered": 12753,
+                        "deaths": 127,
+                        "country": "Andorra",
+                        "population": 76965,
+                        "sq_km_area": 468,
+                        "life_expectancy": "83.5",
+                        "elevation_in_meters": "1,996",
+                        "continent": "Europe",
+                        "abbreviation": "AD",
+                        "location": "Southern Europe",
+                        "iso": 20,
+                        "capital_city": "Andorra la Vella",
+                        "lat": "42.5063",
+                        "long": "1.5218",
+                        "updated": "2021/05/03 13:20:33+00"
+                    }
+                },
+                "Angola": {
+                    "All": {
+                        "confirmed": 26993,
+                        "recovered": 23913,
+                        "deaths": 602,
+                        "country": "Angola",
+                        "population": 29784193,
+                        "sq_km_area": 1246700,
+                        "life_expectancy": "38.3",
+                        "elevation_in_meters": "1,112",
+                        "continent": "Africa",
+                        "abbreviation": "AO",
+                        "location": "Central Africa",
+                        "iso": 24,
+                        "capital_city": "Luanda",
+                        "lat": "-11.2027",
+                        "long": "17.8739",
+                        "updated": "2021/05/03 13:20:33+00"
+                    }
+                },
+                "Antigua and Barbuda": {
+                    "All": {
+                        "confirmed": 1232,
+                        "recovered": 1014,
+                        "deaths": 32,
+                        "country": "Antigua and Barbuda",
+                        "population": 102012,
+                        "sq_km_area": 442,
+                        "life_expectancy": "70.5",
+                        "elevation_in_meters": null,
+                        "continent": "North America",
+                        "abbreviation": "AG",
+                        "location": "Caribbean",
+                        "iso": 28,
+                        "capital_city": "Saint John's",
+                        "lat": "17.0608",
+                        "long": "-61.7964",
+                        "updated": "2021/05/03 13:20:33+00"
+                    }
+                },
+                "Argentina": {
+                    "All": {
+                        "confirmed": 3005259,
+                        "recovered": 2676197,
+                        "deaths": 64252,
+                        "country": "Argentina",
+                        "population": 44271041,
+                        "sq_km_area": 2780400,
+                        "life_expectancy": "75.1",
+                        "elevation_in_meters": 595,
+                        "continent": "South America",
+                        "abbreviation": "AR",
+                        "location": "South America",
+                        "iso": 32,
+                        "capital_city": "Buenos Aires",
+                        "lat": "-38.4161",
+                        "long": "-63.6167",
+                        "updated": "2021/05/03 13:20:33+00"
+                    }
+                }
+                ...
+                }
+            }
+ 
+
+
+## Vaccines [/covid/vaccines]
+### GET
+Untuk mengambil data, saya menggunakan method :
+    
+`GET` `/covid/vaccines` untuk mencari informasi mengenai vaksin Covid
+
++ Response 200 (aplication/json)
+
+    + Body
+        
+            {
+                "Afghanistan": {
+                    "All": {
+                        "administered": 240000,
+                        "people_vaccinated": 0,
+                        "people_partially_vaccinated": 240000,
+                        "country": "Afghanistan",
+                        "population": 35530081,
+                        "sq_km_area": 652090,
+                        "life_expectancy": "45.9",
+                        "elevation_in_meters": null,
+                        "continent": "Asia",
+                        "abbreviation": "AF",
+                        "location": "Southern and Central Asia",
+                        "iso": 4,
+                        "capital_city": "Kabul",
+                        "updated": "2021/04/22 00:00:00+00"
+                    }
+                },
+                "Africa": {
+                    "All": {
+                        "administered": 17957302,
+                        "people_vaccinated": 4896743,
+                        "people_partially_vaccinated": 12874229,
+                        "updated": "2021/05/02 00:00:00+00"
+                    }
+                },
+                "Albania": {
+                    "All": {
+                        "administered": 494028,
+                        "people_vaccinated": 655,
+                        "people_partially_vaccinated": 6073,
+                        "country": "Albania",
+                        "population": 2930187,
+                        "sq_km_area": 28748,
+                        "life_expectancy": "71.6",
+                        "elevation_in_meters": null,
+                        "continent": "Europe",
+                        "abbreviation": "AL",
+                        "location": "Southern Europe",
+                        "iso": 8,
+                        "capital_city": "Tirana",
+                        "updated": "2021/05/01 00:00:00+00"
+                    }
+                },
+                "Algeria": {
+                    "All": {
+                        "administered": 75000,
+                        "people_vaccinated": 0,
+                        "people_partially_vaccinated": 0,
+                        "country": "Algeria",
+                        "population": 41318142,
+                        "sq_km_area": 2381741,
+                        "life_expectancy": "69.7",
+                        "elevation_in_meters": 800,
+                        "continent": "Africa",
+                        "abbreviation": "DZ",
+                        "location": "Northern Africa",
+                        "iso": 12,
+                        "capital_city": "Alger",
+                        "updated": "2021/02/19 00:00:00+00"
+                    }
+                }
+                ...
+                }
+
+       
+## INDONESIA [/covid/indonesia]
+### GET
+Untuk mengambil data, saya menggunakan method :
+    
+`GET` `/covid/indonesia` untuk mencari informasi mengenai  Covid di Indonesia
+
++ Response 200 (aplication/json)
+
+    + Body
+        
+            {
+                "All": {
+                    "confirmed": 1682004,
+                    "recovered": 1535491,
+                    "deaths": 45949,
+                    "country": "Indonesia",
+                    "population": 263991379,
+                    "sq_km_area": 1904569,
+                    "life_expectancy": "70.1",
+                    "elevation_in_meters": 367,
+                    "continent": "Asia",
+                    "abbreviation": "ID",
+                    "location": "Southeast Asia",
+                    "iso": 360,
+                    "capital_city": "Jakarta",
+                    "lat": "-0.7893",
+                    "long": "113.9213",
+                    "updated": "2021/05/03 13:20:33+00"
+                }
+            }
+
+
+## Country Detail [/covid/{countryid}]
+
+### Ambil detail negara [GET]
+
++ Parameters 
+    + countryid (required)
+
++ Response 200 (application/json)   
+
+    + body 
+
+            {
+                "All": {
+                    "confirmed": 217008,
+                    "recovered": 200472,
+                    "deaths": 4149,
+                    "country": "Armenia",
+                    "population": 2930450,
+                    "sq_km_area": 29800,
+                    "life_expectancy": "66.4",
+                    "elevation_in_meters": "1,792",
+                    "continent": "Asia",
+                    "abbreviation": "AM",
+                    "location": "Middle East",
+                    "iso": 51,
+                    "capital_city": "Yerevan",
+                    "lat": "40.0691",
+                    "long": "45.0382",
+                    "updated": "2021/05/03 13:20:33+00"
+                }
+            }
